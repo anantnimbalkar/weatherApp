@@ -25,11 +25,6 @@ class _SplashScreenState extends State<SplashScreen> {
   late StreamSubscription<ConnectivityResult> _subscription;
   @override
   void initState() {
-    showCustomSnackbar(
-        context: context,
-        message: 'No Internet Connection',
-        backgroundColor: Colors.red);
-
     getCurrentLocation();
     Future.delayed(
       Duration(seconds: 5),
